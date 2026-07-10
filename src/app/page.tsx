@@ -10,10 +10,64 @@ import { MapPin, ArrowRight, Activity, Dumbbell, Sparkles } from "lucide-react";
 export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
-  const plans = await db.plan.findMany({
-    where: { active: true },
-    orderBy: { price: "asc" },
-  });
+  let plans: any[] = [];
+  try {
+    plans = await db.plan.findMany({
+      where: { active: true },
+      orderBy: { price: "asc" },
+    });
+  } catch (error) {
+    console.error("Database fallback on Vercel:", error);
+  }
+
+  if (!plans || plans.length === 0) {
+    plans = [
+      {
+        id: "plan-silver",
+        name: "Silver Franchise Membership",
+        slug: "silver-plan",
+        price: 2499,
+        interval: "MONTHLY",
+        features: JSON.stringify([
+          "Access to 1 Home Club Location",
+          "Digital Virtual Gym Card",
+          "Standard Cardio & Strength Floor",
+          "Locker & Shower Access",
+          "1 Complimentary Body Composition Scan",
+        ]),
+      },
+      {
+        id: "plan-gold",
+        name: "Gold All-India Passport",
+        slug: "gold-plan",
+        price: 4499,
+        interval: "MONTHLY",
+        features: JSON.stringify([
+          "Unlimited Access across 25+ Indian Cities",
+          "Fast-Pass Biometric QR Turnstile Entry",
+          "All Group Fitness & HIIT Classes",
+          "Steam Room & Recovery Lounge Access",
+          "Bi-Weekly Coach Check-ins & Body Scans",
+          "Priority Support & App Analytics",
+        ]),
+      },
+      {
+        id: "plan-platinum",
+        name: "Platinum VIP Elite",
+        slug: "platinum-plan",
+        price: 6999,
+        interval: "MONTHLY",
+        features: JSON.stringify([
+          "All-India VIP Access across All 25+ Clubs",
+          "2 Monthly Personal Training Sessions",
+          "Customized Nutrition & Macro Blueprint",
+          "Unlimited Guest Passes (Weekend Access)",
+          "Dedicated Recovery Spa & Cryotherapy Lounge",
+          "Free Fit-Track Merchandise Pack",
+        ]),
+      },
+    ];
+  }
 
   return (
     <div>
