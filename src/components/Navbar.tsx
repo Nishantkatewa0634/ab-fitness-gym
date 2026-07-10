@@ -55,7 +55,7 @@ export default function Navbar() {
             <Dumbbell size={22} color="#fff" />
           </div>
           <span>
-            AB<span className="gradient-text">FITNESS</span>
+            Fit<span className="gradient-text">-Track</span>
           </span>
         </Link>
 

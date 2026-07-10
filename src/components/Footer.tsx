@@ -44,7 +44,7 @@ export default function Footer() {
                 <Dumbbell size={20} color="#fff" />
               </div>
               <span>
-                AB<span className="gradient-text">FITNESS</span>
+                Fit<span className="gradient-text">-Track</span>
               </span>
             </Link>
             <p style={{
@@ -185,7 +185,7 @@ export default function Footer() {
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
                 <Mail size={16} color="var(--accent-primary)" />
-                <span>franchise@abfitness.in</span>
+                <span>support@fit-track.in</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
                 <MapPin size={16} color="var(--accent-primary)" />
@@ -208,7 +208,7 @@ export default function Footer() {
           color: "var(--text-muted)",
         }}>
           <div>
-            &copy; {new Date().getFullYear()} AB Fitness India Pvt Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} Fit-Track India Pvt Ltd. All rights reserved.
           </div>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             <span>Privacy Policy</span>

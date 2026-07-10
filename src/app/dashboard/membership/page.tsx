@@ -47,7 +47,7 @@ export default async function MembershipDetailPage() {
         </span>
         <h1 style={{ fontSize: "2.3rem" }}>Virtual Gym Card & Status</h1>
         <p style={{ color: "var(--text-muted)", fontSize: "1.05rem", marginTop: "0.35rem" }}>
-          Present this dynamic card or scan the QR code at any AB Fitness turnstile across India.
+          Present this dynamic card or scan the QR code at any Fit-Track turnstile across India.
         </p>
       </div>
 
@@ -59,7 +59,7 @@ export default async function MembershipDetailPage() {
 
             <div className="virtual-card-header">
               <div className="virtual-card-brand">
-                AB<span style={{ color: "#c4b5fd" }}>FITNESS</span> PASSPORT
+                FIT<span style={{ color: "#c4b5fd" }}>-TRACK</span> PASSPORT
               </div>
               <div className="virtual-card-tier-badge">
                 {membership.plan.tier} TIER VIP

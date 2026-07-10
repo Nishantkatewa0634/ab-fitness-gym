@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 
 export const metadata: Metadata = {
-  title: "AB Fitness Gym | All-India Franchise & Premium Workout Experience",
-  description: "Join India's premier high-tech gym network across 25+ cities. Access world-class workouts, certified trainers, digital membership cards, and real-time progress tracking.",
+  title: "Fit-Track | All-India Premium Gym & Fitness Experience",
+  description: "Join Fit-Track, India's premier high-tech gym network across 25+ cities. Access world-class workouts, certified trainers, digital membership cards, and real-time progress tracking.",
 };
 
 export default function RootLayout({

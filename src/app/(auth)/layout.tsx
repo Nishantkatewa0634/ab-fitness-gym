@@ -53,7 +53,7 @@ export default function AuthLayout({
             fontWeight: 900,
             letterSpacing: "-0.03em",
           }}>
-            AB<span className="gradient-text">FITNESS</span>
+            Fit<span className="gradient-text">-Track</span>
           </Link>
           <span className="badge badge-violet" style={{ marginLeft: "0.75rem" }}>
             ALL-INDIA FRANCHISE
